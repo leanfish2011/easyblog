@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试</title>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<link href="js/jquery-easyui/themes/metro-blue/easyui.css" rel="stylesheet" type="text/css" />
+<link href="js/jquery-easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-easyui/jquery.easyui.min.js" type="text/javascript"></script>
+<script src="js/jquery-easyui/easyui-lang-zh_CN.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	   var curr_time = new Date();
+	   var strDate = curr_time.getFullYear()+"-";
+	   strDate += curr_time.getMonth()+1+"-";
+	   strDate += curr_time.getDate();
+
+	   $('#txtStartDate').datebox('setValue', strDate);	
+	});
+</script>
+</head>
+<body>
+		<span>开始日期：</span> <input id="txtStartDate" class="easyui-datebox" style="width: 100%;"> 
+		<span>结束日期：</span> <input id="txtEndDate" class="easyui-datebox" style="width: 100%;">
+</body>
+</html>

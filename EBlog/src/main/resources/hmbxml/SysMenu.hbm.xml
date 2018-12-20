@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.blog.po.SysMenu" table="sys_menu" catalog="eblog" optimistic-lock="version">
+		<id name="id" type="string">
+			<column name="ID" length="60" />
+		</id>
+		<property name="createTime" type="timestamp" update="false" insert="false">
+			<column name="CreateTime" length="0" />
+		</property>
+		<property name="creator" type="string" update="false">
+			<column name="Creator" length="60" />
+		</property>
+		<property name="modifyTime" type="timestamp" update="false" insert="false">
+			<column name="ModifyTime" length="0" />
+		</property>
+		<property name="modifier" type="string" insert="false">
+			<column name="Modifier" length="60" />
+		</property>
+		<property name="menuName" type="string">
+			<column name="MenuName" length="50" />
+		</property>
+		<property name="uRL" type="string">
+			<column name="URL" length="100" />
+		</property>
+		<property name="parentID" type="string">
+			<column name="ParentID" length="60" />
+		</property>
+		<property name="index" type="java.lang.Integer">
+			<column name="Index" />
+		</property>
+	</class>
+</hibernate-mapping>

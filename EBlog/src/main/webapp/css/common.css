@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+/* File Created: 2016-1-3 
+*  页面通用样式
+*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+	fieldset, p, blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+* {
+	font-family: 'Microsoft Yahei';
+}
+
+#footer {
+	width:400px;
+	margin:30px auto 30px auto;
+	text-align: center;
+}
+
+#footer li {
+	float: left;
+	padding: 0px 30px 0px 0px;
+	border-right: 1px solid #c4ce4e4;
+	height: 24px;
+	line-height: 24px;
+	color: #333347;
+}
+
+#footer li a {
+	height: 24px;
+	line-height: 24px;
+	color: #333347;
+}

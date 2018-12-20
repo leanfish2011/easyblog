@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+#top {
+	border: 1px solid #D8DFEA;
+	margin: 5px;
+}
+
+#logTitle {
+	font-size: 25px;
+	color: #E33E06;
+	width: 900px;
+}
+
+#articleInfo {
+	margin-left: 20px;
+	font-size: 16px;
+	color: #333347;
+	line-height: 20px;
+}
+
+#postInfo {
+	color: #9D9095;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+hr {
+	color: #c0c0c0;
+}
+
+#content {
+	margin-right: 5px;
+}
+
+#leftArticle {
+	width: 80%;
+	float: left;
+}

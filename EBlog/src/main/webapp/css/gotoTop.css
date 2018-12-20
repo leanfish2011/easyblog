@@ -1,0 +1,24 @@
+/*返回顶部按钮*/
+#gotoTop {
+	display: none;
+	position: fixed;
+	top: 90%;
+	left: 97%;
+	cursor: pointer;
+	margin-top: -50px;
+	margin-right: 20px;
+	padding: 9px 4px;
+	width: 20px;
+	text-align: center;
+	background: #1BA1E2;
+	color: black;
+	_position: absolute;
+	_top: expression(documentElement.scrollTop + documentElement.clientHeight * 3/
+		4 + "px");
+}
+
+#gotoTop.hover {
+	background: #5CB542;
+	color: #fff;
+	text-decoration: none;
+}

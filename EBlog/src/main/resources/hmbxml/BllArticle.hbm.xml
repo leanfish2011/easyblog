@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-2 12:37:59 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+	<class name="com.blog.po.BllArticle" table="bll_article" catalog="eblog" optimistic-lock="version">
+		<id name="id" type="string">
+			<column name="ID" length="60" />
+		</id>
+		<property name="createTime" type="timestamp" update="false" insert="false">
+			<column name="CreateTime" length="0" />
+		</property>
+		<property name="creator" type="string" update="false">
+			<column name="Creator" length="60" />
+		</property>
+		<property name="modifyTime" type="timestamp" update="false" insert="false">
+			<column name="ModifyTime" length="0" />
+		</property>
+		<property name="modifier" type="string" insert="false">
+			<column name="Modifier" length="60" />
+		</property>
+		<property name="typeId" type="string">
+			<column name="TypeID" length="60" />
+		</property>
+		<property name="typeName" type="string">
+			<column name="TypeName" length="50" />
+		</property>
+		<property name="title" type="string">
+			<column name="Title" length="50" />
+		</property>
+		<property name="content" type="string">
+			<column name="Content" length="10000" />
+		</property>
+		<property name="comCount" type="java.lang.Integer" insert="false">
+			<column name="ComCount" />
+		</property>
+		<property name="readCount" type="java.lang.Integer" insert="false">
+			<column name="ReadCount" />
+		</property>
+		<property name="suggestCount" type="java.lang.Integer" insert="false">
+			<column name="SuggestCount" />
+		</property>
+	</class>
+</hibernate-mapping>

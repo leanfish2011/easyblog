@@ -1,0 +1,35 @@
+body {
+	background: #fff;
+	margin: 0px;
+}
+
+a {
+	color: #818181;
+}
+
+td {
+	font-size: 10pt;
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+}
+
+#exMsg {
+	color: red;
+}
+
+#txtUserCode, #txtPass {
+	width: 200px;
+	height: 25px;
+	border: 2px solid #D5CECE;
+}
+
+#btnCancel, #btnLogin {
+	height: 30px;
+	width: 90px;
+	border: 2px solid #D5CECE;
+	background-color: #2EBB4E;
+	color: white;
+}
+
+#btnCancel:HOVER, #btnLogin:HOVER {
+	background-color: #20923A;
+}

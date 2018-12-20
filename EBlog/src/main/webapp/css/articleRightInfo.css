@@ -1,0 +1,40 @@
+#rightInfo {
+	float: left;
+	font-size: 15px;
+	color: #333347;
+	line-height: 15px;
+	margin: 5px;
+	width: 19%;
+}
+
+#authorInfo {
+	border: 1px solid #D6D6D6;
+}
+
+#rightCategory {
+	margin-top: 10px;
+	border: 1px solid #D6D6D6;
+}
+
+#rightCategory p {
+	background: #52BFF5;
+	height: 20px;
+}
+
+#authorInfo {
+	border: 1px solid #D6D6D6;
+}
+
+#authorInfoTitle {
+	background: #52BFF5;
+	height: 20px;
+}
+
+#categoryLinks {
+	line-height: 25px;
+	margin-left: 20px;
+}
+
+#categoryLinks li {
+	list-style: none;
+}

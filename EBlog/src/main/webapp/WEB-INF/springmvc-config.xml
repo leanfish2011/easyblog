@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+	http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<!-- ①：对com.blog包中的所有类进行扫描，以完成Bean创建和自动依赖注入的功能。带有@Component @Controller、@Services、@Repository都会在com.blog下中进行扫描，完成装配，省去了new -->
+	<context:component-scan base-package="com.blog" />
+
+	<!-- ②：启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
+	<mvc:annotation-driven />
+
+	<!-- ③：InternalResourceViewResolver：用于支持Servlet、JSP视图解析； 对模型视图名称的解析，即在模型视图名称添加前后缀。 在WebContent目录下搜索.jsp文件，具体路径由控制器中指定 prefix和suffix：查找视图页面的前缀和后缀（前缀[逻辑视图名]后缀）， 比如传进来的逻辑视图名为hello，则该该jsp视图页面应该存放在“WEB-INF/jsp/hello.jsp”； -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/view/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- 文件上传 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="10000000" />
+		<property name="defaultEncoding" value="utf-8" />
+	</bean>
+
+	<!-- 国际化文件，设置/language/language,根据session中取得后面的名称 -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="/language/language" />
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
+
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="zh_CN" />
+	</bean>
+
+	<mvc:interceptors>
+		<!-- 国际化拦截器 -->
+		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
+		
+		<!-- 登录检查拦截器 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/**" />
+			<bean class="com.blog.interceptor.LoginInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+</beans>  

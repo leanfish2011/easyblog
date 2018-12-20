@@ -1,0 +1,35 @@
+/*文章浏览界面菜单样式*/
+#divMenu {
+	line-height: 30px;
+	height: 30px;
+	top: 0px;
+	background: #1BA1E2;
+	margin-left: 5px;
+	margin-right: 5px;
+	z-index: 100;
+}
+
+#divMenu ul {
+	list-style: none;
+	line-height: 30px;
+	margin: 0 auto 0 auto;
+}
+
+#divMenu ul li {
+	display: block;
+	float: left;
+	/*width: 80px;*/
+}
+
+#divMenu ul li a {
+	text-decoration: none;
+	color: White;
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	/*padding-left: 23px;*/
+}
+
+#divMenu ul li a:hover {
+	background: #52BFF5;
+}

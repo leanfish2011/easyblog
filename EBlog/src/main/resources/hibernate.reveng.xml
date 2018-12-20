@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="eblog" match-name="bll_article"/>
+  <table-filter match-catalog="eblog" match-name="bll_articletype"/>
+  <table-filter match-catalog="eblog" match-name="bll_attachment"/>
+  <table-filter match-catalog="eblog" match-name="bll_commont"/>
+  <table-filter match-catalog="eblog" match-name="bll_crawltask"/>
+  <table-filter match-catalog="eblog" match-name="bll_favarticle"/>
+  <table-filter match-catalog="eblog" match-name="bll_favuser"/>
+  <table-filter match-catalog="eblog" match-name="bll_pageinfo"/>
+  <table-filter match-catalog="eblog" match-name="bll_suggest"/>
+  <table-filter match-catalog="eblog" match-name="sys_user"/>
+</hibernate-reverse-engineering>

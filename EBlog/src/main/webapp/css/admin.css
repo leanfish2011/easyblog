@@ -1,0 +1,14 @@
+/*后台管理样式*/
+body,div,h1,h2,h3,h4,p,form,label,input,textarea,img,span,ul,li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 微软雅黑;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}

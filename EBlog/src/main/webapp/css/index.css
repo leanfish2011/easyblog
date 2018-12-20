@@ -1,0 +1,147 @@
+@CHARSET "UTF-8";
+/*首页index.jsp样式 */
+
+#topMenu {
+	width: 100%;
+	top: 0px;
+	background: white;
+	z-index: 100;
+	margin: 0 auto 0 auto;
+}
+
+#top {
+	border: 1px solid #D8DFEA;
+	margin: 5px;
+}
+
+#midSearch {
+	width: 700px;
+	margin-left: 50px;
+}
+
+#midSearch input {
+	width: 400px;
+	height: 30px;
+	font-size: 15px;
+	border: 1px solid #4791FF;
+}
+
+#midSearch span a {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	background: #3385FF;
+	color: white;
+	text-decoration: none;
+}
+
+#logTitle {
+	font-size: 25px;
+	color: #E33E06;
+}
+
+#divMenu {
+	line-height: 30px;
+	height: 30px;
+	top: 0px;
+	background: #1BA1E2;
+	margin-left: 5px;
+	margin-right: 5px;
+	z-index: 100;
+}
+
+#divMenu ul {
+	list-style: none;
+	line-height: 30px;
+	margin: 0 auto 0 auto;
+}
+
+#divMenu ul li {
+	display: block;
+	float: left;
+	/*width: 80px;*/
+}
+
+#divMenu ul li a {
+	text-decoration: none;
+	color: White;
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	/*padding-left: 23px;*/
+}
+
+#divMenu ul li a:hover {
+	background: #52BFF5;
+}
+
+.adv_active {
+	background-color: #e70;
+	color: #fff;
+}
+
+.aPageDisable {
+	background: #1428E6;
+	color: white;
+	text-decoration: none;
+}
+
+#pageFilter {
+	margin: 10px;
+}
+
+#pageFilter a {
+	text-decoration: none;
+	padding: 1px 3px 1px 3px;
+	border: 1px solid #1BA1E2;
+}
+
+#articleInfo {
+	margin: 10px;
+	font-size: 14px;
+	color: #333347;
+	line-height: 18px;
+	margin-top: 5px;
+}
+
+#leftArticle {
+	width: 80%;
+	float: left;
+	margin: 5px;
+	border: 1px solid #D6D6D6;
+}
+
+#rightCategory {
+	float: left;
+	font-size: 15px;
+	color: #333347;
+	line-height: 15px;
+	margin: 5px;
+	width: 18%;
+	border: 1px solid #D6D6D6;
+}
+
+#postInfo {
+	color: #9D9095;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+/*文章分割线*/
+#articleSplit{
+	border: 1px dotted #E4DDDD;
+}
+
+#categoryLinks {
+	line-height: 25px;
+	margin-left: 20px;
+}
+
+#categoryLinks li {
+	list-style: none;
+}
+
+#rightCategory p {
+	margin: 5px;
+}

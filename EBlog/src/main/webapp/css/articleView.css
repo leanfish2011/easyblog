@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+/*文章浏览页样式*/
+#top {
+	border: 1px solid #D8DFEA;
+	margin: 5px;
+}
+
+#logTitle {
+	font-size: 25px;
+	color: #E33E06;
+	width: 900px;
+}
+
+#content {
+	margin-left: 20px;
+	margin-right: 5px;
+}
+
+#articleInfo {
+	font-size: 16px;
+	color: #333347;
+	line-height: 20px;
+}
+
+#title {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+#postInfo {
+	color: #9D9095;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#leftArticle {
+	width: 80%;
+	float: left;
+}
+
+
+

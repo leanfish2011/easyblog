@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-2 12:37:59 by Hibernate Tools 5.2.1.Final -->
+<hibernate-mapping>
+    <class name="com.blog.po.BllPageinfo" table="bll_pageinfo" catalog="eblog" optimistic-lock="version">
+		<id name="id" type="string">
+			<column name="ID" length="60" />
+		</id>
+		<property name="createTime" type="timestamp" update="false" insert="false">
+			<column name="CreateTime" length="0" />
+		</property>
+		<property name="creator" type="string" update="false">
+			<column name="Creator" length="60" />
+		</property>
+		<property name="modifyTime" type="timestamp" update="false" insert="false">
+			<column name="ModifyTime" length="0" />
+		</property>
+		<property name="modifier" type="string" insert="false">
+			<column name="Modifier" length="60" />
+		</property>
+        <property name="url" type="string">
+            <column name="URL" length="100" />
+        </property>
+        <property name="title" type="string">
+            <column name="Title" length="100" />
+        </property>
+        <property name="postTime" type="string">
+            <column name="PostTime" length="60" />
+        </property>
+        <property name="content" type="string">
+            <column name="Content" length="65535" />
+        </property>
+        <property name="author" type="string">
+            <column name="Author" length="45" />
+        </property>
+        <property name="authorPage" type="string">
+            <column name="AuthorPage" length="60" />
+        </property>
+    </class>
+</hibernate-mapping>
