@@ -7,7 +7,7 @@
 >1. 使用Maven3+Spring3+Springmvc+Hibernate3架构；数据库使用Mysql；
 >2. 自定义前端页面实现博客的分页显示，博客分类，文章归类显示；完成用户评论等功能；
 >3. 使用EasyUI实现后台对博客、博客类别、用户评论的管理，包括增删改查等；
->4. 使用ECharts作为统计图展现，并且自己封装了Echarts，使得方便快捷使用。项目地址：https://github.com/leanfish2011/MyEcharts；
+>4. 使用ECharts作为统计图展现，并且自己封装了Echarts，使得方便快捷使用。项目地址：https://github.com/leanfish2011/MyEcharts
 >5. 使用kindeditor编辑器实现写博客功能等；
 >6. 自己写了爬虫，爬取其他网站信息加入到自己的博客中。通过博客网站登录，可以设置关键词，后台自动进行抓取。项目地址：https://github.com/leanfish2011/Crawler
 >7. 使用ElasticSearch实现全文检索。可以实现标题和文章内容关键词搜索。MySQL中博客和ElasticSearch中同步。
