@@ -32,14 +32,10 @@
 #### **5. 添加博客类别等等**
 ![博客类别](http://images.cnblogs.com/cnblogs_com/yangtze-yufei/860899/o_%e5%8d%9a%e5%ae%a2%e7%b1%bb%e5%88%ab%e7%ae%a1%e7%90%86.png)
 
-### **三. 爬虫**
-![爬虫主页](http://images.cnblogs.com/cnblogs_com/yangtze-yufei/860899/o_Blog%20Crawler_005.png)
-
 ### **Todo**
 >1. 加强和优化ElasticSearch作为博客网站的搜索引擎；
->2. 加强爬虫功能，目前仅能抓取博客园内容，后续实现能抓取任意网站内容；
->3. 加强权限控制；
->4. 加强图表统计功能。
+>2. 加强权限控制；
+>3. 加强图表统计功能。
 
 
 欢迎大家star，follow。
